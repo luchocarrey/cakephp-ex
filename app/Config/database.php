@@ -84,7 +84,7 @@ class DATABASE_CONFIG {
             'port'       => '',
             'login'      => '',
             'password'   => '',
-            'database'   => 'test_database',
+            'database'   => 'sampledb',
             'prefix'     => '',
             'encoding' => 'utf8',
         );
