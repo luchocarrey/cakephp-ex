@@ -67,7 +67,7 @@
 class DATABASE_CONFIG {
         public $default = array(
             'datasource' => 'Database/Postgres',
-            'persistent' => false,
+            'persistent' => true,
             'host'       => '',
             'port'       => '',
             'login'      => '',
@@ -79,7 +79,7 @@ class DATABASE_CONFIG {
 
         public $test = array(
             'datasource' => 'Database/Postgres',
-            'persistent' => false,
+            'persistent' => true,
             'host'       => '',
             'port'       => '',
             'login'      => '',
