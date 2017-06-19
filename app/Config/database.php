@@ -94,9 +94,9 @@ class DATABASE_CONFIG {
         $datasource = 'Database/'.ucfirst(getenv('DATABASE_ENGINE'));
         $this->default['host']       = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_HOST");
         $this->default['port']       = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_PORT");
-        $this->default['login']      = getenv("DATABASE_USER");
-        $this->default['password']   = getenv("DATABASE_PASSWORD");
-        $this->default['database']   = getenv("DATABASE_NAME");
+        $this->default['login']      = getenv("POSTGRESQL_USER");
+        $this->default['password']   = getenv("POSTGRESQL_PASSWORD");
+        $this->default['database']   = getenv("POSTGRESQL_DATABASE");
         $this->default['datasource'] = $datasource;
         $this->test['datasource']    = $datasource;
 	}
