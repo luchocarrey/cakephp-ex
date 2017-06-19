@@ -91,8 +91,7 @@ class DATABASE_CONFIG {
 
 	public function __construct() {
 
-        //$datasource = 'Database/'.ucfirst(getenv('DATABASE_ENGINE'));
-        $datasource = 'Database/Postgres';
+        $datasource = 'Database/'.ucfirst(getenv('DATABASE_ENGINE'));
         $this->default['host']       = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_HOST");
         $this->default['port']       = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_PORT");
         $this->default['login']      = getenv("DATABASE_USER");
